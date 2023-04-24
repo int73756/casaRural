@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>La Posada del Bosque</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link href="imagenes/favicon.png" rel="icon">
+    <link rel="stylesheet" href="estilos/estiloInicio.css">
+    <link href="estilos/galeria_assets/main.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100 bg-dark" onload="document.getElementById('inicioMain').style.opacity='1'">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light text-center" id="menu">
+        <div class="container px-2 px-sm-5">
+            <a href="#" class="navbar-brand">
+                <img src="imagenes/favicon.png" alt="..." height="36">
+            </a>
+            <a class="navbar-brand" id="tit" href="#">
+                <h2>La Posada del Bosque</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="formularioContacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="actividadesAsturias.html">Actividades</a></li>
+                    <li class="nav-item mx-1"><a class="btn rounded-5 btn-warning w-100" data-bs-toggle="modal" data-bs-target="#reserva">Reserva YA!</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="inicioMain">
+        <div id="carouselInicio" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item">
+                    <img src="imagenes/000.jpg" class="d-block w-100 c-img" id="img-1">
+                    <div class="carousel-caption">
+                        <p class="text-uppercase fs-3 sombra">Descubre</p>
+                        <h1 class="display-4 text-uppercase fw-bolder sombra">la Costa Verde asturiana</h1>
+                        <p class="text-uppercase fs-3 sombra">desde nuestra casa rural en Ribadesella</p>
+                        <button class="btn btn-lg btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#reserva">Haz
+                            tu reserva</button>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="imagenes/002.jpg" class="d-block w-100 c-img" id="img-2">
+                    <div class="carousel-caption">
+                        <p class="text-uppercase fs-3 sombra">Accede a nuestra</p>
+                        <h1 class="display-4 text-uppercase fw-bolder sombra">Galería de imágenes</h1>
+                        <p class="text-uppercase fs-3 sombra">para conocer todos los rincones de la casa</p>
+                        <a href="galeria.html" class="btn btn-lg btn-primary mt-2">Acceder</a>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="imagenes/003.jpg" class="d-block w-100 c-img" id="img-3">
+                    <div class="carousel-caption">
+                        <h1 class="display-5 text-uppercase fw-bolder sombra">¡Haz que tus vacaciones sean inolvidables!
+                        </h1>
+                        <p class="text-uppercase fs-3 sombra mb-0">Encuentra tu actividad ideal en</p>
+                        <p class="text-uppercase fs-3 sombra mt-0">el entorno natural asturiano</p>
+                        <a href="actividadesAsturias.html" class="btn btn-lg btn-primary mt-2">Descubrir</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselInicio" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselInicio" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="modal fade" id="reserva" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div id="reservaForm">
+                            <h1 class="fw-bold">Reserva on-line</h1>
+                            <div class="container">
+                                <form>
+                                    <div class="row mb-3">
+                                        <div class="col-12 col-md-6">
+                                            <label for="adultos" class="form-label">Adultos</label>
+                                            <select class="form-select" id="adultos" name="adultos">
+                                                <option value="0" selected>0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label for="ninios" class="form-label">Niños</label>
+                                            <select class="form-select" id="ninios" name="ninios">
+                                                <option value="0" selected>0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-12 col-md-6">
+                                            <label for="inputLlegada" class="form-label">Llegada</label>
+                                            <input type="date" class="form-control" id="inputLlegada" name="llegada">
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label for="inputSalida" class="form-label">Salida</label>
+                                            <input type="date" class="form-control" id="inputSalida" name="salida">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-12">
+                                            <label for="inputEmail" class="form-label">Correo electrónico</label>
+                                            <input type="email" class="form-control" id="inputEmail" name="email">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <p><b>TOTAL: </b><span id="total">0</span>€/noche</p>
+                                    </div>
+                                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                        <button type="reset" class="btn btn-danger me-md-2 mb-2 mb-md-0"
+                                            onclick="document.getElementById('miFormulario').reset();">Borrar</button>
+                                        <button type="submit" class="btn btn-primary"
+                                            id="enviar-formulario">Reservar</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="p-3" id="caracteristicas">
+            <h1 class="display-5 px-md-4 text-center">Características del alojamiento</h1>
+            <div class="row m-2">
+                <div class="col-xl-6 p-2">
+                    <div class="p-4 bg-white rounded-2">
+                        <h2>Habitación</h2>
+                        <div class="row">
+                            <div class="col-md-6 my-2">
+                                <img src="imagenes/icons/camadoble.png" width="30"><span class="mx-2">2 habitaciones con
+                                    cama doble</span>
+                            </div>
+                            <div class="col-md-6 my-2">
+                                <img src="imagenes/icons/camaindi.png" width="30"><span class="mx-2">Buhardilla con 4
+                                    camas individuales</span>
+                            </div>
+                            <div class="my-2">
+                                <img src="imagenes/icons/ropa.png" width="30"><span class="mx-2">Ropa de cama</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 p-2">
+                    <div class="p-4 bg-white rounded-2">
+                        <h2>Baño</h2>
+                        <div class="row">
+                            <div class="col-md-6 my-2">
+                                <img src="imagenes/icons/agua.png" width="30"><span class="mx-2">Agua caliente</span>
+                            </div>
+                            <div class="col-md-6 my-2">
+                                <img src="imagenes/icons/jabones.png" width="30"><span class="mx-2">Toallas, jabones,
+                                    papel higiénico,etc</span>
+                            </div>
+                            <div class="col-md-6 my-2">
+                                <img src="imagenes/icons/baniera.png" width="30"><span class="mx-2">Bañera</span>
+                            </div>
+                            <div class="col-md-6 my-2">
+                                <img src="imagenes/icons/lavadora.png" width="30"><span class="mx-2">Lavadora</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 p-2">
+                    <div class="p-4 bg-white rounded-2">
+                        <h2>Cocina</h2>
+                        <div class="row">
+                            <div class="col-xl-4 col-md-6 my-2">
+                                <img src="imagenes/icons/cubiertos.png" width="30"><span class="mx-2">Platos y
+                                    cubiertos</span>
+                            </div>
+                            <div class="col-xl-4 col-md-6 my-2">
+                                <img src="imagenes/icons/lavavajillas.png" width="30"><span
+                                    class="mx-2">Lavavajillas</span>
+                            </div>
+                            <div class="col-xl-4 col-md-6 my-2">
+                                <img src="imagenes/icons/vitro.png" width="30"><span class="mx-2">Cocina
+                                    vitrocerámica</span>
+                            </div>
+                            <div class="col-xl-4 col-md-6 my-2">
+                                <img src="imagenes/icons/horno.png" width="30"><span class="mx-2">Horno</span>
+                            </div>
+                            <div class="col-xl-4 col-md-6 my-2">
+                                <img src="imagenes/icons/micro.png" width="30"><span class="mx-2">Microondas</span>
+                            </div>
+                            <div class="col-xl-4 col-md-6 my-2">
+                                <img src="imagenes/icons/nevera.png" width="30"><span class="mx-2">Frigorífico</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 p-2">
+                    <div class="p-4 bg-white rounded-2">
+                        <h2>Otros</h2>
+                        <div class="row">
+                            <div class="col-xl-4 col-md-6 my-2">
+                                <img src="imagenes/icons/playa.png" width="30"><span class="mx-2">A 1Km de la
+                                    playa</span>
+                            </div>
+                            <div class="col-xl-4 col-md-6 my-2">
+                                <img src="imagenes/icons/wifi.png" width="30"><span class="mx-2">Wi-Fi</span>
+                            </div>
+                            <div class="col-xl-4 col-md-6 my-2">
+                                <img src="imagenes/icons/air.png" width="30"><span class="mx-2">Aire
+                                    acondicionado</span>
+                            </div>
+                            <div class="col-xl-4 col-md-6 my-2">
+                                <img src="imagenes/icons/jardin.png" width="30"><span class="mx-2">Amplio jardín</span>
+                            </div>
+                            <div class="col-xl-4 col-md-6 my-2">
+                                <img src="imagenes/icons/aparcamiento.png" width="30"><span class="mx-2">Aparcamiento
+                                    gratuito</span>
+                            </div>
+                            <div class="col-xl-4 col-md-6 my-2">
+                                <img src="imagenes/icons/mascota.png" width="30"><span class="mx-2">Admite
+                                    mascotas</span>
+                            </div>
+                            <div class=" col-md-6 my-2">
+                                <img src="imagenes/icons/chimenea.png" width="30"><span class="mx-2">Chimenea de
+                                    leña</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-2">
+                <div class="col-lg-6 ">
+                    <h1 class="display-5 text-center text-lg-start mt-4 mx-3">Precios</h1>
+                    <div class="container">
+                        <table class="table my-3 text-center table-bordered">
+
+                            <tr id="precios">
+                                <th class="text-uppercase fw-bold">tarifa</th>
+                                <th>Adultos</th>
+                                <th>Niños</th>
+                            </tr>
+                            <tr class="alta fw-bold">
+                                <th>Temporada alta<br>(mayo - septiembre)</th>
+                                <td>40€/noche</td>
+                                <td>32€/noche</td>
+                            </tr>
+                            <tr class="baja fw-bold">
+                                <th>Temporada baja<br>(octubre - abril)</th>
+                                <td>35€/noche</td>
+                                <td>28€/noche</td>
+                            </tr>
+                        </table>
+                        <div class="row">
+                            <div class="col">
+                                <p class="fw-bold">Tarifa mínima por noche:</p>
+                                <p class="p-2 alta">Temporada alta: 216€ (equivalente a 3 adultos y 3
+                                    niños)</p>
+                                <p class="p-2 baja">Temporada baja: 189€ (equivalente a 3 adultos y 3
+                                    niños)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 text-center text-lg-start my-4">Ubicación aproximada</h1>
+                    <div class="d-flex justify-content-center">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7710.917082870122!2d-5.052387156042404!3d43.45554718469032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2ses!4v1681705628451!5m2!1ses!2ses"
+                            width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-4 mt-auto" id="foot1">
+        <div class="container px-5">
+            <div class="small m-0 text-white text-center">&copy; Miguel Ángel Martínez Pérez - Página web ficticia
+                para el módulo de Lenguaje de Marcas del ciclo DAM </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><img src="imagenes/icons/scrollback.png" width="25"></img></a>
+
+    <script src="estilos/javaScriptPropio.js"></script>
+    <script src="estilos/galeria_assets/main.js"></script>
+</body>
+</html>

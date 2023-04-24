@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400&display=swap');
+#menu,  #reservaForm, .beige{
+    background-color: rgb(242, 228, 204);
+}
+body{
+    padding-top: 64px;
+}
+#caracteristicas{
+    background-color: rgb(242, 228, 204);
+}
+#tit, #titulin{
+    font-family: 'Gaegu', cursive;
+}
+.nav-link{
+    font-weight: 600;
+}
+
+.c-item{
+    height: 690px;
+}
+.c-img{
+    height: 100%;
+    object-fit: cover;
+}
+#img-1{
+    object-position:48% 20%;
+    filter: brightness(0.6);
+}
+#img-2{
+    object-position: 50% 25%;
+    filter: brightness(0.6);
+}
+#img-3{
+    object-position: 50% 0%;
+    filter: brightness(0.6);
+}
+.sombra{
+    text-shadow: 5px 5px 5px #000000;
+}
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom:initial;
+}
+.carousel-item{
+    -webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+transform-style: preserve-3d;
+}
+
+#reservaForm{
+    max-width: 100%;
+    padding: 2em;
+}
+.modal-body{
+    padding: 0;
+}
+.btn-close{
+    position: absolute;
+    right: 0;
+    padding: 1em;
+}
+.modal-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+input[type="date"] {
+    font-size: 14px;
+  }
+
+#contactoBody{
+    background-image: linear-gradient(160deg, rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0)), url(../imagenes/012.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position-y: top;
+}
+
+.textoFondo, #contact .form-label, .text, #galTit, #actTit{
+    text-shadow: 3px 3px 5px black;
+    color:white;
+}
+
+.oscurecer{
+    background-color: rgba(255, 255, 255, 0.167);
+}
+
+#redes img{
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+#face{
+    text-decoration: none;
+}
+
+#foot1{
+    background-color: #0e0e0e;
+}
+#foot2{
+    background-color: rgba(0, 0, 0, 0.48);
+}
+.spinner-wrapper{
+    background-color: #000000;
+    position: fixed;
+    top: 0px;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s;
+}
+.spinner-border{
+    color:aquamarine;
+}
+
+#actividadesBody{
+    background-color: rgb(64, 64, 64);
+    transition: 0.5s;
+}
+
+#indice li{
+    list-style: none;
+    color:rgb(0, 87, 193);
+}
+#indice a{
+    font-weight: bold;
+    transition: 0.2s;
+}
+#indice a:hover{
+    color: rgb(255, 255, 255);
+    font-weight:bolder;
+    text-shadow: 3px 1px 4px #000000;
+}
+#indice ul{
+    padding-left: 15px;
+}
+
+#actMain, #inicioMain, #contactoMain{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+a.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+.linkazo{
+    font-weight: bold;
+}
+
+#precios{
+    background-color: #FF0866;
+    color: white;
+}
+.alta{
+    background-color: rgb(171, 198, 180);
+}
+.baja{
+    background-color: rgb(148, 165, 189);
+}

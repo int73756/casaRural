@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto - La Posada del Bosque</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link href="imagenes/favicon.png" rel="icon">
+    <link rel="stylesheet" href="estilos/estiloInicio.css">
+    <link href="estilos/galeria_assets/main.css" rel="stylesheet">
+</head>
+
+<body class="overflow-auto d-flex flex-column h-100 min-vh-100" id="contactoBody" onload="document.getElementById('contactoMain').style.opacity='1'">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light text-center" id="menu">
+        <div class="container px-2 px-sm-5">
+            <a href="paginaInicio.html" class="navbar-brand">
+                <img src="imagenes/favicon.png" alt="..." height="36">
+            </a>
+            <a class="navbar-brand" id="tit" href="#">
+                <h2>La Posada del Bosque</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="paginaInicio.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="actividadesAsturias.html">Actividades</a></li>
+                    <li class="nav-item mx-1"><button class="btn rounded-5 btn-warning w-100" data-bs-toggle="modal" data-bs-target="#reserva">Reserva YA!</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="reserva" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div id="reservaForm">
+                        <h1 class="fw-bold">Reserva on-line</h1>
+                        <div class="container">
+                            <form>
+                                <div class="row mb-3">
+                                    <div class="col-12 col-md-6">
+                                        <label for="adultos" class="form-label">Adultos</label>
+                                        <select class="form-select" id="adultos" name="adultos">
+                                            <option value="0" selected>0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="ninios" class="form-label">Niños</label>
+                                        <select class="form-select" id="ninios" name="ninios">
+                                            <option value="0" selected>0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputLlegada" class="form-label">Llegada</label>
+                                        <input type="date" class="form-control" id="inputLlegada" name="llegada">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputSalida" class="form-label">Salida</label>
+                                        <input type="date" class="form-control" id="inputSalida" name="salida">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <label for="inputEmail" class="form-label">Correo electrónico</label>
+                                        <input type="email" class="form-control" id="inputEmail" name="email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p><b>TOTAL: </b><span id="total">0</span>€/noche</p>
+                                </div>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                    <button type="reset" id="borrar-form" class="btn btn-danger me-md-2 mb-2 mb-md-0"
+                                        onclick="document.getElementById('miFormulario').reset();">Borrar</button>
+                                    <button type="submit" class="btn btn-primary"
+                                        id="enviar-formulario">Reservar</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main id="contactoMain" style="max-width: 1200px; margin: auto;">
+
+        <h1 class="display-3 text-center mx-2 mt-2 text-white textoFondo">Contáctanos rellenando el formulario...</h1>
+
+        <form class="text-white mx-md-5 mt-3 p-4 rounded-2  oscurecer" id="contact">
+
+            <div class="row">
+                <div class="row mb-3 col-lg-6">
+                    <div class="col-12">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe aquí tu nombre...">
+                    </div>
+                    <div class="col-12 mt-3">
+                        <label for="tlf" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="tlf" name="tlf" placeholder="Escribe aquí tu número de teléfono...">
+                    </div>
+                    <div class="col-12  col-xl-12 mt-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Escribe aquí tu correo electrónico...">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <label for="msg" class="form-label">Mensaje</label><br>
+                    <textarea class="form-control" name="msg" id="msg" cols="30" rows="10" placeholder="Escribe aquí tu mensaje..."></textarea>
+                </div>
+            </div>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mx-md-5 mt-4">
+                    <button type="reset" class="btn btn-danger w-100 botones" style="max-width:538px"
+                    onclick="document.getElementById('contact').reset();">Borrar</button>
+                    <button type="submit" class="btn btn-primary w-100 botones" style="max-width:538px" id="enviar-formulario"">Enviar</button>
+            </div>
+
+        </form>
+
+        <h1 class="display-3 text-center textoFondo mx-2">...o a través de nuestras redes sociales</h1>
+
+        <div class="px-5 text-white mx-md-5 my-3 p-4 rounded-2 oscurecer" id="redes">
+            <div class="row gy-5">
+                <div class="col-md-3">
+                    <div class="dbox w-100 text-center">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="imagenes/icons/tlf.png">
+                        </div>
+                        <div class="text fw-bold">
+                            985-66-99-69
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dbox w-100 text-center">   
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="imagenes/icons/whats.png">
+                        </div>
+                        <div class="text fw-bold">
+                            +34 666-333-999
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dbox w-100 text-center">
+                        <div class="d-flex align-items-center justify-content-center">
+                        <img src="imagenes/icons/correo.png" width="50">
+                        </div>
+                        <div class="text fw-bold">
+                        laposada@delbosque.es
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dbox w-100 text-center">
+                        <a href="https://www.facebook.com/" id="face"><div class="d-flex align-items-center justify-content-center">
+                            <img src="imagenes/icons/fb.png" width="50">
+                        </div>
+                        <div class="text fw-bold">
+                            La Posada del Bosque
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><img src="imagenes/icons/scrollback.png" width="25"></img></a>
+    <footer class="py-4 mt-auto bottom-0 w-100" id="foot2">
+        <div class="container px-5">
+            <div class="small m-0 text-white text-center">&copy; Miguel Ángel Martínez Pérez - Página web ficticia
+                para el módulo de Lenguaje de Marcas del ciclo DAM </div>
+        </div>
+    </footer>
+
+    <script src="estilos/javaScriptPropio.js"></script>
+    <script src="estilos/galeria_assets/main.js"></script>
+
+</body>
+
+</html>
